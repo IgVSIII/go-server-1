@@ -41,7 +41,6 @@ func getUsers(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("%12s | %12s | %12s\n", "Id", "Name", "Family")
 	fmt.Println("------------------------------------------")
 	for _, u := range users {
-		//fmt.Println("", u.Id, u.Name, u.Family)
 		fmt.Printf("%12d | %12s | %12s\n", u.Id, u.Name, u.Family)
 	}
 	b, err := json.Marshal(users)
