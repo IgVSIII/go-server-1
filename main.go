@@ -1,12 +1,13 @@
 package main
 
 import (
-	"dblib"
 	"encoding/json"
 	"fmt"
-	"loglib"
 	"net/http"
-	"readconfig"
+
+	"./src/dblib"
+	"./src/loglib"
+	"./src/readconfig"
 )
 
 func main() {
